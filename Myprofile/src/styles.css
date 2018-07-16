@@ -3,15 +3,19 @@
 @import 'node_modules/font-awesome/css/font-awesome.css';
 
 /*my own classes */
-.body-bg {
-    background: black url("./assets/image/bg.JPG") no-repeat;
+body {
+    background: black url("./assets/images/bg.JPG") no-repeat;
     background-size: 100%;
-    opacity: 0.7;
+}
+.main-container{
+    background-color: black;
+    background-size: 100%;
+    opacity: 0.6;
 }
 .header-bg {
-    height: 100px;
+    height: 80px;
     background-color: black;
-    opacity: 0.6;
+    opacity: 1;
 }
 .white-font {
     font-size: 30px;
