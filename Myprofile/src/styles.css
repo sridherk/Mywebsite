@@ -4,7 +4,7 @@
 
 /*my own classes */
 body {
-    background: rgb(1, 24, 0);
+    background: rgb(255, 255, 255);
     background-size: 100%;
 }
 .main-container{
@@ -40,6 +40,18 @@ body {
     -ms-transform: rotate(-30deg); /* IE 9 */
     -webkit-transform: rotate(-30deg); /* Safari */
     transform: rotate(-35deg); /* Standard syntax */
+}
+
+.title-text{
+    font-size: 24px;
+    color: #154e10;
+}
+
+.subtitle-text{
+    font-size: 16px;
+    color: #154e10;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 768px) {
