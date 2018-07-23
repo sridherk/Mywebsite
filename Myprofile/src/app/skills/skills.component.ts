@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  star5:Array<number>;
-  star4:Array<number>;
-  star3:Array<number>;
-  star2:Array<number>;
-  star1:Array<number>;
+  star5: Array<number>;
+  star4: Array<number>;
+  star3: Array<number>;
+  star2: Array<number>;
+  star1: Array<number>;
   constructor() { }
 
   ngOnInit() {
