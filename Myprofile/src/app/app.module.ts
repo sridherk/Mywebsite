@@ -11,6 +11,8 @@ import { ContactComponent } from './contact/contact.component';
 
 import { AppRoutingModule } from './/app-routing.module';
 
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,8 @@ import { AppRoutingModule } from './/app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
