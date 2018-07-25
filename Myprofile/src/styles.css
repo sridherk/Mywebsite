@@ -58,9 +58,13 @@ body {
     height: 100%;
     width: 100%;
 }
+.exp-hover:hover{
+    background-color: #154e10;
+    color: white;
+}
 @media screen and (max-width: 768px) {
     .white-font {
-        font-size: 24px;
+        font-size: 20px;
         color: white;
         font-family: Arial, Helvetica, sans-serif;
     }
