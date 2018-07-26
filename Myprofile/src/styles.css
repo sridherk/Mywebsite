@@ -53,14 +53,25 @@ body {
     font-weight: bold;
     text-decoration: underline;
 }
-
 .bg-span-height{
     height: 100%;
     width: 100%;
 }
-.exp-hover:hover{
+.exp-year{
+    font-size: 12px;
+    color: gray;
+}
+.link-exp:hover, .link-exp:active, .exp-hover:hover, .exp-hover:active{
     background-color: #154e10;
     color: white;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+.link-exp:link, .link-exp:visited, .exp-hover:link, .exp-hover:visited{
+    background-color: lightgray;
+    color: black;
+    text-decoration-line: none;
+    cursor: pointer;
 }
 @media screen and (max-width: 768px) {
     .white-font {
