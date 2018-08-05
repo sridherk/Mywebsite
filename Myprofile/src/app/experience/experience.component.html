@@ -1,60 +1,22 @@
 <h3 class="title-text mt-2 mb-0 ml-0">Experience</h3>
 <div class="row footer-bg align-center mb-5">
-  <div class="container-fluid">
-
+  <div class="container-fluid" (click)="toggleState" *ngFor="let exp of expData">
     <div class="exp-hover m-1 mt-2 p-2 row border border-success">
-      <span class="col-10">
-        Capgemini Technology Services
-        <span class="ml-2 exp-year">2 Years (Current)</span>
+      <span class="col-11 row">
+        <div class="col-md-2 col-12">
+          <img [src]="[exp.img]" height="45" width="120" class="mr-3" />
+        </div>
+        <div class="col-md-10 col-12">{{exp.companyName}}
+          <span class="ml-2 exp-year">{{exp.totalExp}}
+            <span *ngIf="exp.isCurrentCompany">&nbsp;&nbsp;(Current)</span>
+          </span>
+        </div>
       </span>
-      <span class="col-2 text-center">
+      <span class="col-1 text-center p-4 p-md-0">
         <fa name="angle-double-down" style="font-size: 21px;"></fa>
       </span>
     </div>
-
   </div>
-  <div class="container-fluid">
-    <div class="exp-hover m-1 mt-2 p-2 row border border-success">
-      <span class="col-10">
-        Cognizant Technology Services
-        <span class="ml-2 exp-year">3 Years 8 Months</span>
-      </span>
-      <span class="col-2 text-center">
-          <fa name="angle-double-down" style="font-size: 21px;"></fa>
-        </span>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="exp-hover m-1 mt-2 p-2 row border border-success">
-      <span class="col-10">
-        Wipro Technology Limited
-        <span class="ml-2 exp-year">2 Years 6 Months</span>
-      </span>
-      <span class="col-2 text-center">
-          <fa name="angle-double-down" style="font-size: 21px;"></fa>
-        </span>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="exp-hover m-1 mt-2 p-2 row border border-success">
-      <span class="col-10">
-        Xlabz Technologiies
-        <span class="ml-2 exp-year">8 Months</span>
-      </span>
-      <span class="col-2 text-center">
-          <fa name="angle-double-down" style="font-size: 21px;"></fa>
-        </span>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="exp-hover m-1 mt-2 p-2 row border border-success">
-      <span class="col-10">
-        KnowledgeQ Interactive Consultancy Services P.Ltd
-        <span class="ml-2 exp-year">2 Years</span>
-      </span>
-      <span class="col-2 text-center">
-          <fa name="angle-double-down" style="font-size: 21px;"></fa>
-        </span>
-    </div>
-  </div>
+  <div class="col-12">.</div>
 </div>
+

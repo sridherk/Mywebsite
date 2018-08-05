@@ -2,101 +2,26 @@
 <!-- <fa name="star" style="color:white; font-size: 18px;"></fa> -->
 <div class="row footer-bg align-center mb-5">
   <div class="container-fluid">
-    <div class="row d-flex justify-content-center">
-      <div class="mt-2 col-12 col-md-5 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success pl-3 pt-2 bg-span-height"></span>
+    <div class="row d-flex justify-content-center" *ngFor="let skill of skillData">
+      <div class="mt-2 col-12 col-md-5 p-0 row rounded border border-success" style="height: 60px;">
+        <span class="col-2 bg-success p-1 pt-2 bg-span-height">
+          <img [src]="[skill.img1]" width="60" height="45"/>
+        </span>
         <span class="p-3 col-10 bg-light rounded">
-          Javascript 
-          <fa *ngFor="let n of star5" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
+          {{skill.language1}} 
+          <fa *ngFor="let n of skill.star1" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
         </span>
       </div>
       <div class="mt-2 col-12 col-md-5 offset-md-2 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success bg-span-height"></span>
-        <span class="p-3 col-10 bg-light rounded">
-          Typescript 
-          <fa *ngFor="let n of star4" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
+        <span class="col-2 bg-success p-1 pt-2 bg-span-height">
+          <img [src]="[skill.img2]" width="60" height="45"/>
         </span>
-      </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-      <div class="mt-2 col-12 col-md-5 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success bg-span-height"></span>
         <span class="p-3 col-10 bg-light rounded">
-          ExtJS 
-          <fa *ngFor="let n of star5" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
-        </span>
-      </div>
-      <div class="mt-2 col-12 col-md-5 offset-md-2 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success bg-span-height"></span>
-        <span class="p-3 col-10 bg-light rounded">
-          Angular 5 
-          <fa *ngFor="let n of star4" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
-        </span>
-      </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-      <div class="mt-2 col-12 col-md-5 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success bg-span-height"></span>
-        <span class="p-3 col-10 bg-light rounded">
-          React.js 
-          <fa *ngFor="let n of star2" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
-        </span>
-      </div>
-      <div class="mt-2 col-12 col-md-5 offset-md-2 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success bg-span-height"></span>
-        <span class="p-3 col-10 bg-light rounded">
-          JQuery
-          <fa *ngFor="let n of star3" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
-        </span>
-      </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-      <div class="mt-2 col-12 col-md-5 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success bg-span-height"></span>
-        <span class="p-3 col-10 bg-light rounded">
-          HTML
-          <fa *ngFor="let n of star4" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
-        </span>
-      </div>
-      <div class="mt-2 col-12 col-md-5 offset-md-2 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success bg-span-height"></span>
-        <span class="p-3 col-10 bg-light rounded">
-          CSS
-          <fa *ngFor="let n of star4" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
-        </span>
-      </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-      <div class="mt-2 col-12 col-md-5 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success bg-span-height"></span>
-        <span class="p-3 col-10 bg-light rounded">
-          Bootstarp
-          <fa *ngFor="let n of star4" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
-        </span>
-      </div>
-      <div class="mt-2 col-12 col-md-5 offset-md-2 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success bg-span-height"></span>
-        <span class="p-3 col-10 bg-light rounded">
-          SCSS
-          <fa *ngFor="let n of star3" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
-        </span>
-      </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-      <div class="mt-2 col-12 col-md-5 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success bg-span-height"></span>
-        <span class="p-3 col-10 bg-light rounded">
-          D3.js
-          <fa *ngFor="let n of star3" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
-        </span>
-      </div>
-      <div class="mt-2 col-12 col-md-5 offset-md-2 p-0 row rounded border border-success" style="height: 60px;;">
-        <span class="col-2 bg-success bg-span-height"></span>
-        <span class="p-3 col-10 bg-light rounded">
-          LESS
-          <fa *ngFor="let n of star2" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
+          {{skill.language2}} 
+          <fa *ngFor="let n of skill.star2" name="star" class="float-right" style="color:darkorange; font-size: 18px;"></fa>
         </span>
       </div>
     </div>
   </div>
+  <div class="col-12">.</div>
 </div>

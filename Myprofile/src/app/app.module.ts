@@ -13,6 +13,8 @@ import { AppRoutingModule } from './/app-routing.module';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
